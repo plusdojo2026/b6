@@ -1,12 +1,12 @@
+drop table IdPw;
 CREATE TABLE IdPw (
 id VARCHAR(20) PRIMARY KEY, 	/* ID */
 pw VARCHAR(20)					/* パスワード */
 );
 
-INSERT INTO IdPw VALUES('id', 'password');
-
+INSERT INTO IdPw VALUES('id', 'pw');
 SELECT * FROM IdPw;
-
+drop table Bc;
 CREATE TABLE Bc (
 number INT PRIMARY KEY AUTO_INCREMENT,	/* 番号 */
 company VARCHAR(20),					/* 会社名 */

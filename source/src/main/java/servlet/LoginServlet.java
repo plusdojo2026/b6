@@ -20,6 +20,7 @@ import dto.Result;
  */
 //ここを変更したよ
 @WebServlet("")
+//@WebServlet("/LoginServlet")
 public class LoginServlet extends HttpServlet {
 	private static final long serialVersionUID = 1L;
 

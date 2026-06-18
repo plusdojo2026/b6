@@ -26,7 +26,7 @@ public class MenuServlet extends HttpServlet {
 		// もしもログインしていなかったらログインサーブレットにリダイレクトする
 		HttpSession session = request.getSession();
 		if (session.getAttribute("id") == null) {
-			response.sendRedirect("/webappAns/LoginServlet");
+			response.sendRedirect("/b6/LoginServlet");
 			return;
 		}
 

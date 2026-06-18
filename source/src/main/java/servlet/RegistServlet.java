@@ -30,7 +30,7 @@ public class RegistServlet extends HttpServlet {
 		// もしもログインしていなかったらログインサーブレットにリダイレクトする
 		HttpSession session = request.getSession();
 		if (session.getAttribute("id") == null) {
-			response.sendRedirect("/webappAns/LoginServlet");
+			response.sendRedirect("/b6/LoginServlet");
 			return;
 		}
 
@@ -48,7 +48,7 @@ public class RegistServlet extends HttpServlet {
 		// もしもログインしていなかったらログインサーブレットにリダイレクトする
 		HttpSession session = request.getSession();
 		if (session.getAttribute("id") == null) {
-			response.sendRedirect("/webappAns/LoginServlet");
+			response.sendRedirect("/b6/LoginServlet");
 			return;
 		}
 
@@ -69,9 +69,9 @@ public class RegistServlet extends HttpServlet {
 		BcDAO bDao = new BcDAO();
 		if (bDao.insert(new Bc(0, company,  department, position, name, zipcode, address, 
 				phone, fax, email, remarks))) { // 登録成功
-			request.setAttribute("result", new Result("登録成功！", "レコードを登録しました。", "/webappAns/MenuServlet"));
+			request.setAttribute("result", new Result("登録成功！", "レコードを登録しました。", "/b6/MenuServlet"));
 		} else { // 登録失敗
-			request.setAttribute("result", new Result("登録失敗！", "レコードを登録できませんでした。", "/webappAns/MenuServlet"));
+			request.setAttribute("result", new Result("登録失敗！", "レコードを登録できませんでした。", "/b6/MenuServlet"));
 		}
 
 		// 結果ページにフォワードする

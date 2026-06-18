@@ -8,7 +8,7 @@
 <body>
 <h1>登録</h1>
 <hr>
-<form method="POST" action="/webappAns/RegistServlet">
+<form method="POST" action="/b6/RegistServlet">
 会社名<input type="text" name="company"><br>
 部署名<input type="text" name="department"><br>
 役職名<input type="text" name="position"><br>
@@ -21,6 +21,6 @@ FAX番号<input type="text" name="fax"><br>
 備考<input type="text" name="remarks"><br>
 <input type="submit" name="regist" value="登録"><br>
 </form>
-<a href="/webappAns/MenuServlet">メニューへ戻る</a>
+<a href="/b6/MenuServlet">メニューへ戻る</a>
 </body>
 </html>

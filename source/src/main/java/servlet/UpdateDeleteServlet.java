@@ -30,7 +30,7 @@ public class UpdateDeleteServlet extends HttpServlet {
 		// もしもログインしていなかったらログインサーブレットにリダイレクトする
 		HttpSession session = request.getSession();
 		if (session.getAttribute("id") == null) {
-			response.sendRedirect("/webappAns/LoginServlet");
+			response.sendRedirect("/b6/LoginServlet");
 			return;
 		}
 
@@ -53,16 +53,16 @@ public class UpdateDeleteServlet extends HttpServlet {
 		if (request.getParameter("submit").equals("更新")) {
 			if (bDao.update(new Bc(number, company,  department, position, name, zipcode, address, 
 					phone, fax, email, remarks))) { // 更新成功
-				request.setAttribute("result", new Result("更新成功！", "レコードを更新しました。", "/webappAns/MenuServlet"));
+				request.setAttribute("result", new Result("更新成功！", "レコードを更新しました。", "/b6/MenuServlet"));
 			} else { // 更新失敗
-				request.setAttribute("result", new Result("更新失敗！", "レコードを更新できませんでした。", "/webappAns/MenuServlet"));
+				request.setAttribute("result", new Result("更新失敗！", "レコードを更新できませんでした。", "/b6/MenuServlet"));
 			}
 		} else {
 			if (bDao.delete(new Bc(number, company,  department, position, name, zipcode, address, 
 					phone, fax, email, remarks))) { // 削除成功
-				request.setAttribute("result", new Result("削除成功！", "レコードを削除しました。", "/webappAns/MenuServlet"));
+				request.setAttribute("result", new Result("削除成功！", "レコードを削除しました。", "/b6/MenuServlet"));
 			} else { // 削除失敗
-				request.setAttribute("result", new Result("削除失敗！", "レコードを削除できませんでした。", "/webappAns/MenuServlet"));
+				request.setAttribute("result", new Result("削除失敗！", "レコードを削除できませんでした。", "/b6/MenuServlet"));
 			}
 		}
 

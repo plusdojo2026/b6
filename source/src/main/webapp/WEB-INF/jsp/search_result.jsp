@@ -11,7 +11,7 @@
 <hr>
 
 <c:forEach var="e" items="${cardList}" >
-	<form method="POST" action="/webappAns/UpdateDeleteServlet">
+	<form method="POST" action="/b6/UpdateDeleteServlet">
 	<input type="hidden" name="number" value="${e.number}">
 	会社名<input type="text" name="company" value="${e.company}"><br>
 	部署名<input type="text" name="department" value="${e.department}"><br>
@@ -31,7 +31,7 @@
 <c:if test="${empty cardList}">
 <p>指定された条件に一致するデータはありません。</p>
 </c:if>
-<a href="/webappAns/MenuServlet">メニューへ戻る</a>
+<a href="/b6/MenuServlet">メニューへ戻る</a>
 
 </body>
 </html>
