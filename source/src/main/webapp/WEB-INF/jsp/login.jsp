@@ -7,7 +7,7 @@
 </head>
 <body>
 <h1>ログイン</h1>
-<p>※ID=id, PW=pw でログインできます。
+<p>※ID=id, PW=pw でログイン。
 <hr>
 <form method="POST" action="/b6/LoginServlet">
 ID<input type="text" name="id"><br>
