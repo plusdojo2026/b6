@@ -10,6 +10,6 @@
 <hr>
 <p><a href="/webappAns/RegistServlet">登録</a></p>
 <p><a href="/webappAns/SearchServlet">検索（更新／削除）</a></p>
-<p><a href="/webappAns/LogoutServlet">ログアウト</a></p>
+<p><a href="/webappAns/LogoutServlet">ログアウトします</a></p>
 </body>
 </html>
