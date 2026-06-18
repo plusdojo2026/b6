@@ -7,8 +7,9 @@
 </head>
 <body>
 <h1>メニュー</h1>
+
 <hr>
-<p><a href="/webappAns/RegistServlet">登録</a></p>
+<p><a href="/webappAns/RegistServlet">登録します</a></p>
 <p><a href="/webappAns/SearchServlet">検索（更新／削除）</a></p>
 <p><a href="/webappAns/LogoutServlet">ログアウト</a></p>
 </body>
